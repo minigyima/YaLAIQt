@@ -3,7 +3,7 @@
 YaLAI - The Qt rewrite
 
 YaLAI is graphical installer built for Arch Linux, with an aim to create a customizable, vanilla Arch install, with little effort.
-Keep in mind, that this is the source code for the installer. The iso can be found at *ISO [https://github.com/minigyima/yalai-iso]
+Keep in mind, that this is the source code for the installer. The iso can be found at *https://github.com/minigyima/yalai-iso
 
 ## Features
 - A graphical UI written in Qt5
