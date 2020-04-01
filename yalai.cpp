@@ -1318,8 +1318,8 @@ void yalai::on_Back_btn_clicked()
             preseedStream << QString("shell=%1").arg(shell) << endl;
             preseedStream << QString("de=%1").arg(de) << endl;
             preseedStream << QString("dm=%1").arg(dm) << endl;
-            preseedStream << QString("pass1=%1").arg(passwd1) << endl;
-            preseedStream << QString("pass2=%1").arg(passwd2) << endl;
+            preseedStream << QString("passwd1=%1").arg(passwd1) << endl;
+            preseedStream << QString("passwd2=%1").arg(passwd2) << endl;
             preseedStream << QString("rtpass1=%1").arg(rootpasswd1) << endl;
             preseedStream << QString("rtpass2=%1").arg(rootpasswd2) << endl;
 
@@ -1333,7 +1333,7 @@ void yalai::on_Back_btn_clicked()
         }
         file.close();
         captureProgress = true;
-        exec("bash", QStringList() << "./scripts/installer.sh");
+        //exec("bash", QStringList() << "./scripts/installer.sh");
 
     }
 // Progress changed
