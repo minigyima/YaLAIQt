@@ -1333,7 +1333,7 @@ void yalai::on_Back_btn_clicked()
         }
         file.close();
         captureProgress = true;
-        //exec("bash", QStringList() << "./scripts/installer.sh");
+        exec("bash", QStringList() << "./scripts/installer.sh");
 
     }
 // Progress changed
