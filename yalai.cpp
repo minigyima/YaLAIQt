@@ -13,7 +13,7 @@ yalai::yalai(QWidget *parent)
     phase(phase_state);
     //phase(7);
     // Application title
-    QString version = "3.0";
+    QString version = "3.1";
     debug_msg(QString("Starting YaLAI (version: %1)...").arg(version), "msg");
     QString title = QString("YaLAI (version: %1, Running in: %2 mode)").arg(version, isEFI());
     this->setWindowTitle(title);
