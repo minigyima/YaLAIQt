@@ -1,4 +1,6 @@
 #!/bin/bash
+# YaLAI Installer: Subzone list maker script
+# Copyright minigyima, 2020
 zone=$1
 touch subzonelist.txt
 rm subzonelist.txt

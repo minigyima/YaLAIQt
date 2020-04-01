@@ -1,4 +1,6 @@
 #!/bin/bash
+# YaLAI Installer: Partition list maker script
+# Copyright minigyima, 2020
 drive=$1
 touch part.txt
 rm part.txt

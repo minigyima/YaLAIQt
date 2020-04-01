@@ -1,4 +1,6 @@
 #!/bin/bash
+# YaLAI Installer: Preseed sorter script
+# Copyright minigyima, 2020
 preseed() {
     # Block device, aka Disk
     disk=$(cat preseed.conf | grep disk | sed -E 's/^disk=//')

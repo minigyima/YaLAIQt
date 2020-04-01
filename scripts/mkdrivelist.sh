@@ -1,4 +1,6 @@
 #!/bin/bash
+# YaLAI Installer: Drivelist maker script
+# Copyright minigyima, 2020
 touch drives.txt
 rm drives.txt
 touch list.txt
