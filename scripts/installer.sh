@@ -68,12 +68,10 @@ drivemount() {
                 esac
 }
 baseInstall() {
-    # Fetching latest mirrorlist
-    wget https://www.archlinux.org/mirrorlist/all/
-    mv index.html mirrorlist
-    sed -i 's/^#Server/Server/' mirrorlist
     # Applying mirrorlist
     cp mirrorlist /etc/pacman.d/mirrorlist
+    # Updating mirrors
+    pacman -Syy
     # Base, base-devel
     echo "# Installing base system via pacstrap..." > progress.txt
     pacstrap -i /mnt base base-devel --noconfirm
