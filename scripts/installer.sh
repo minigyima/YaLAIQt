@@ -27,8 +27,8 @@ varSetup() {
     # Username
     username=$(cat .installVars.conf | grep uname | sed -E 's/^uname=//')
     # Password
-    passwd1=$(cat .installVars.conf | grep passwd1 | sed -E 's/^pass1=//')
-    passwd2=$(cat .installVars.conf | grep passwd2 | sed -E 's/^pass2=//')
+    passwd1=$(cat .installVars.conf | grep passwd1 | sed -E 's/^passwd1=//')
+    passwd2=$(cat .installVars.conf | grep passwd2 | sed -E 's/^passwd2=//')
     # Root password
     root_password1=$(cat .installVars.conf | grep rtpass1 | sed -E 's/^rtpass1=//')
     root_password2=$(cat .installVars.conf | grep rtpass2 | sed -E 's/^rtpass2=//')
