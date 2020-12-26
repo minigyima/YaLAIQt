@@ -72,9 +72,10 @@ baseInstall() {
     cp mirrorlist /etc/pacman.d/mirrorlist
     # Updating mirrors
     pacman -Syy
+    pacman -S archlinux-keyring
     # Base, base-devel
     echo "# Installing base system via pacstrap..." > progress.txt
-    pacstrap -i /mnt base base-devel --noconfirm
+    pacstrap -i /mnt base base-devel bash --noconfirm
     # Old base dependencies
     echo "# Installing kernel and other utils..." > progress.txt
     arch_chroot "pacman -S --noconfirm --asdeps archlinux-keyring"
